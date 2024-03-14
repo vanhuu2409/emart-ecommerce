@@ -4,7 +4,18 @@ import withMT from "@material-tailwind/react/utils/withMT";
 export default withMT({
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#314838",
+        third: "#E2EBE5",
+        secondary: "#696f42",
+        hightlight: "#f79797",
+      },
+    },
   },
-  plugins: [require("tailwindcss-animated")],
+  // eslint-disable-next-line no-undef
+  plugins: [
+    require("tailwindcss-animated"),
+    require("tailwindcss-debug-screens"),
+  ],
 });
