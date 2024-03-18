@@ -3,6 +3,7 @@ import ArrivalsProduct from "./ArrivalsProduct";
 import Glide from "@glidejs/glide";
 
 const Arrivals = () => {
+  const a = "";
   useEffect(() => {
     const slider = new Glide(".glide-arrivals", {
       type: "carousel",
