@@ -64,13 +64,13 @@ const Arrivals = () => {
   ];
   return (
     <div className='mx-auto'>
-      <h2 className=' px-0 sm:px-6 md:px-10 lg:px-16 pt-4 pb-2 uppercase font-bold text-4xl text-primary drop-shadow-sm bg-white w-full'>
+      <h2 className='px-0 sm:px-6 md:px-10 lg:px-16 pt-8 pb-4 uppercase font-bold text-4xl text-primary drop-shadow-sm bg-white w-full'>
         NEW ARRIVALS
       </h2>
       {/*<!-- Component: Carousel with controls inside --> */}
       <div className='glide-arrivals bg-white relative w-full  px-0 sm:px-6 md:px-10 lg:px-16'>
         {/*    <!-- Slides --> */}
-        <div className='overflow-hidden' data-glide-el='track'>
+        <div className='overflow-hidden rounded-md' data-glide-el='track'>
           <ul className='whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0'>
             {products.map((product) => (
               <li key={product.id + product.name}>
@@ -81,7 +81,7 @@ const Arrivals = () => {
         </div>
         {/*    <!-- Controls --> */}
         <div
-          className='absolute left-0 px-10 sm:px-16 md:px-20 top-[40%] flex justify-between items-center w-full'
+          className='absolute left-0 px-10 sm:px-16 md:px-20 top-[40%] hidden sm:flex justify-between items-center w-full'
           data-glide-el='controls'
         >
           <button

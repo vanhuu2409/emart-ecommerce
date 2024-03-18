@@ -14,10 +14,10 @@ const VideoCarousel = () => {
         Your browser does not support the video tag.
       </video>
       <div className='absolute top-1/2 -translate-y-1/2 left-1/4 -translate-x-1/4 flex flex-col gap-8 drop-shadow-2xl'>
-        <h2 className='text-white text-2xl lg:text-5xl font-bold uppercase tracking-wider'>
+        <h2 className='text-white text-2xl lg:text-5xl font-bold uppercase tracking-wider select-none'>
           Meet your new <br /> headliners
         </h2>
-        <p className='text-white lg:text-[1.3rem] font-extralight text-base tracking-wider'>
+        <p className='text-white lg:text-[1.3rem] font-extralight text-base tracking-wider select-none'>
           These looks are ready to rock.
         </p>
         <Link

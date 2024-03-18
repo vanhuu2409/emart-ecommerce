@@ -87,10 +87,10 @@ const Collections = () => {
                   />
                   <div className='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[rgb(2,2,2)]'></div>
                   <div className='absolute p-10 bottom-0 left-0 flex flex-col gap-2'>
-                    <h3 className='uppercase font-bold text-third text-2xl transition-all drop-shadow-lg hover:text-primary'>
+                    <h3 className='uppercase font-bold text-secondary text-2xl transition-all drop-shadow-lg hover:text-primary'>
                       {item?.name}
                     </h3>
-                    <button className='uppercase text-left font-extralight text-third  drop-shadow-lg text-xl underline underline-offset-4 transition-all hover:text-primary'>
+                    <button className='uppercase text-left font-extralight text-secondary drop-shadow-lg text-lg md:text-xl underline underline-offset-4 transition-all hover:text-primary'>
                       Shop now
                     </button>
                   </div>
@@ -101,7 +101,7 @@ const Collections = () => {
         </div>
         {/*    <!-- Controls --> */}
         <div
-          className='absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 '
+          className='absolute left-0 hidden sm:flex items-center justify-between w-full h-0 px-4 top-1/2 '
           data-glide-el='controls'
         >
           <button

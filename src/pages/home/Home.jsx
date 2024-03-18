@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <Suspense fallback={<Loading />}>
       <div className='mx-auto'>
-        <div className='mx-auto '>
+        <div className='mx-auto'>
           <VideoCarousel />
         </div>
-        <div className='mx-auto py-4'>
+        <div className='mx-auto py-4 px-4 sm:px-0'>
           <Arrivals />
         </div>
         <div className='mx-auto py-4'>

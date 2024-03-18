@@ -31,6 +31,8 @@ const Trending = () => {
       name: "the nolan",
       price: 375,
       description: "women's dolly jacket",
+      subUrl:
+        "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
       url: "https://cdn.sanity.io/images/v8kybopt/production/9a2471354e58d5faa35e53bac6f6d50a7f7ff114-2400x2400.jpg?rect=240,0,1920,2400&w=400&h=500&fit=max&auto=format",
     },
     {
@@ -38,6 +40,8 @@ const Trending = () => {
       name: "the stella",
       price: 255,
       description: "women's smile pocket denim skirt",
+      subUrl:
+        "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
       url: "https://cdn.sanity.io/images/v8kybopt/production/c482379c01b02b7b6454be6dfe1a0f38fab8c6f4-2000x2500.png?w=400&h=500&fit=max&auto=format",
     },
     {
@@ -45,6 +49,8 @@ const Trending = () => {
       name: "the annie",
       price: 375,
       description: "women's honey / bone bovine cowgirl boot",
+      subUrl:
+        "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
       url: "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
     },
     {
@@ -52,6 +58,8 @@ const Trending = () => {
       name: "the earl",
       price: 285,
       description: "women's medium blue wash denim jeans",
+      subUrl:
+        "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
       url: "https://cdn.sanity.io/images/v8kybopt/production/e94df3aba50df97335ba489b3df5375b01613c63-2000x2500.jpg?w=400&h=500&fit=max&auto=format",
     },
     {
@@ -59,6 +67,8 @@ const Trending = () => {
       name: "the dean",
       price: 285,
       description: "men's light blue ditsy cotton button down",
+      subUrl:
+        "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
       url: "https://cdn.sanity.io/images/v8kybopt/production/08ddd7b023e987c3c0c000785c3a96c65770446f-2000x2500.jpg?w=400&h=500&fit=max&auto=format",
     },
   ];
@@ -69,9 +79,9 @@ const Trending = () => {
         alt='trending'
         className='object-cover w-full max-w-full max-h-[85%] m-auto rounded-md'
       />
-      <div className='gap-6 mt-6 flex flex-col justify-center'>
-        <div className='flex flex-col justify-center gap-2'>
-          <h3 className='text-bred text-[1.375rem] uppercase font-semibold tracking-wide leading-snug'>
+      <div className='gap-6 mt-4 flex flex-col justify-center'>
+        <div className='flex flex-col'>
+          <h3 className='text-bred text-[1.5rem] uppercase font-semibold tracking-wide leading-snug'>
             TRENDING
           </h3>
           <a
@@ -103,7 +113,7 @@ const Trending = () => {
               </div>
               {/*    <!-- Controls --> */}
               <div
-                className='absolute left-0 px-10 sm:px-16 md:px-4 top-[40%] flex justify-between items-center w-full'
+                className='absolute left-0 px-10 sm:px-16 md:px-4 top-[40%] hidden sm:flex justify-between items-center w-full'
                 data-glide-el='controls'
               >
                 <button

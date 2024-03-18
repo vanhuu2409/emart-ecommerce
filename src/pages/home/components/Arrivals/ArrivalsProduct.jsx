@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const ArrivalsProduct = (props) => {
   return (
     <>
       {/*<!-- Component: E-commerce card --> */}
-      <a
-        href='/'
-        className='overflow-hidden rounded bg-[#FCF9F4] text-primary  hover:scale-110 duration-200 ease-linear hover:opacity-85 cursor-pointer shadow-md shadow-gray-300 h-full flex border-primary z-40 flex-col'
+      <Link
+        to='/'
+        className='overflow-hidden rounded bg-[#FCF9F4] text-primary  hover:scale-110 duration-200 ease-linear hover:opacity-85 cursor-pointer shadow-md shadow-gray-300 flex h-full border-primary z-40 flex-col'
       >
         {/*  <!-- Image --> */}
         <figure className=''>
@@ -31,7 +33,7 @@ const ArrivalsProduct = (props) => {
             {props?.description}
           </p>
         </div>
-      </a>
+      </Link>
       {/*<!-- End E-commerce card --> */}
     </>
   );
