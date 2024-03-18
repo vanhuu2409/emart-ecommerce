@@ -3,7 +3,6 @@ import MyContext from "../../context/data/MyContext";
 
 const Footer = () => {
   const context = useContext(MyContext);
-  console.table(context);
   const { state, setState } = context;
   const { name, desc } = state;
   return (

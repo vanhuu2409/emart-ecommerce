@@ -1,6 +1,6 @@
 const SaleBar = ({ children }) => {
   return (
-    <div className='w-full hidden lg:flex items-center justify-between py-3 px-10 bg-secondary text-white'>
+    <div className='w-full flex items-center justify-between py-3 px-10 bg-secondary text-white'>
       <div className='lg:block hidden min-w-[166px]'></div>
       <div className='w-full flex justify-center items-center gap-3 divide-x divide-gray-500'>
         <p className='text-center text-[14px] font-light tracking-wide leading-4'>
