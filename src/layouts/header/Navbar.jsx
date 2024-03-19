@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const Navbar = () => {
   const [isActiveNav, setIsActiveNav] = useState("");
   const [isNavToggle, setIsNavToggle] = useState(false);
   const navItem = [
@@ -297,4 +297,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navbar;

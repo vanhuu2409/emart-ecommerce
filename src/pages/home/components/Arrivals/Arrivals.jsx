@@ -3,7 +3,6 @@ import ArrivalsProduct from "./ArrivalsProduct";
 import Glide from "@glidejs/glide";
 
 const Arrivals = () => {
-  const a = "";
   useEffect(() => {
     const slider = new Glide(".glide-arrivals", {
       type: "carousel",
@@ -11,12 +10,12 @@ const Arrivals = () => {
       perView: 4,
       autoplay: 3000,
       animationDuration: 700,
-      gap: 10,
+      gap: 24,
       breakpoints: {
         1024: {
           perView: 2,
         },
-        640: {
+        768: {
           perView: 1,
         },
       },
@@ -30,6 +29,7 @@ const Arrivals = () => {
     {
       id: 1,
       name: "women's dolly jacket",
+      status: "limited edition",
       price: 250,
       description: "women's black/white cotton outerwear outer",
       url: "https://cdn.sanity.io/images/v8kybopt/production/f3b9d8b545ff451d62cb970ca320cc88d1f341be-2000x2500.png?w=400&h=500&fit=max&auto=format",
@@ -37,6 +37,7 @@ const Arrivals = () => {
     {
       id: 2,
       name: "women's smile pocket denim skirt",
+      status: "New",
       price: 95,
       description: "women's medium blue wash denim skirt",
       url: "https://cdn.sanity.io/images/v8kybopt/production/44187b3521eea29ccd49a9616cee880bd877b394-2000x2500.png?w=400&h=500&fit=max&auto=format",
@@ -44,6 +45,7 @@ const Arrivals = () => {
     {
       id: 3,
       name: "the annie",
+      status: "New",
       price: 375,
       description: "women's honey / bone bovine cowgirl boot",
       url: "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
@@ -51,6 +53,7 @@ const Arrivals = () => {
     {
       id: 4,
       name: "women's mid-rise bootcut jeans",
+      // status: "New",
       price: 115,
       description: "women's medium blue wash denim jeans",
       url: "https://cdn.sanity.io/images/v8kybopt/production/15e7a645dfdfd04b33d463b9cae83cc435f808a9-2000x2500.png?w=400&h=500&fit=max&auto=format",
@@ -58,6 +61,7 @@ const Arrivals = () => {
     {
       id: 5,
       name: "men's vintage weight sawtooth short sleeve pearl snap",
+      status: "New",
       price: 88,
       description: "men's light blue ditsy cotton button down",
       url: "https://cdn.sanity.io/images/v8kybopt/production/7cc905b78e934bcedc6cadc51c3d7f46e6b75cd8-2000x2500.png?w=400&h=500&fit=max&auto=format",

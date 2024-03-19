@@ -21,7 +21,7 @@ export default withMT({
         sm: "576px",
         // => @media (min-width: 576px) { ... }
 
-        md: "960px",
+        md: "768px",
         // => @media (min-width: 960px) { ... }
 
         lg: "1024px",
@@ -34,6 +34,5 @@ export default withMT({
     require("tailwindcss-animated"),
     require("tailwindcss-debug-screens"),
     require("flowbite/plugin"),
-    require("tw-elements-react/dist/plugin.cjs"),
   ],
 });

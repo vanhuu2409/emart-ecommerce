@@ -2,7 +2,7 @@ import { FaUserCog } from "react-icons/fa";
 import SaleBar from "./SaleBar";
 import { useState } from "react";
 import Headroom from "react-headroom";
-import Navigation from "./Navigation";
+import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
         <nav className='relative z-50 w-full px-2 py-3 lg:py-0 flex items-center justify-between lg:justify-start flex-no-wrap lg:flex-wrap bg-primary text-white'>
           <div className='w-full px-3 flex flex-wrap items-center justify-between'>
             {/* <!-- Collapsible navigation container --> */}
-            <Navigation />
+            <Navbar />
 
             {/* <!-- Logo --> */}
             <Link
@@ -30,7 +30,7 @@ const Header = () => {
             {/* <!-- Right elements --> */}
             <div className='relative flex flex-1 gap-5 items-center justify-end'>
               {/* <!-- Search Icon --> */}
-              <button className='hover:text-secondary inline-flex items-center active:text-secondary transition-all text-white'>
+              <button className='hover:text-secondary hidden sm:inline-flex items-center active:text-secondary transition-all text-white'>
                 <span className='[&>svg]:w-6 inline-flex items-center gap-4 '>
                   <div className='relative mb-3 hidden lg:inline-flex items-center'>
                     <input

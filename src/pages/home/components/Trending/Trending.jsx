@@ -10,12 +10,12 @@ const Trending = () => {
       perView: 2,
       autoplay: 3000,
       animationDuration: 700,
-      gap: 10,
+      gap: 24,
       breakpoints: {
         1024: {
           perView: 2,
         },
-        640: {
+        768: {
           perView: 1,
         },
       },
@@ -30,6 +30,7 @@ const Trending = () => {
       id: 1,
       name: "the nolan",
       price: 375,
+      status: "limited edition",
       description: "women's dolly jacket",
       subUrl:
         "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
@@ -39,6 +40,7 @@ const Trending = () => {
       id: 2,
       name: "the stella",
       price: 255,
+      status: "New",
       description: "women's smile pocket denim skirt",
       subUrl:
         "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
@@ -48,6 +50,7 @@ const Trending = () => {
       id: 3,
       name: "the annie",
       price: 375,
+      status: "New",
       description: "women's honey / bone bovine cowgirl boot",
       subUrl:
         "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
@@ -57,6 +60,7 @@ const Trending = () => {
       id: 4,
       name: "the earl",
       price: 285,
+      // status: "New",
       description: "women's medium blue wash denim jeans",
       subUrl:
         "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
@@ -66,6 +70,7 @@ const Trending = () => {
       id: 5,
       name: "the dean",
       price: 285,
+      status: "New",
       description: "men's light blue ditsy cotton button down",
       subUrl:
         "https://cdn.sanity.io/images/v8kybopt/production/6fc535a3fb08ed5c3623a17ebaa8f7fc867cb813-2000x2500.png?w=400&fit=max&auto=format",
